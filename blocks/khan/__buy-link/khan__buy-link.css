@@ -1,0 +1,27 @@
+.khan__buy-link {
+  position: relative;
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
+  margin: 0 0 0 48px;
+}
+
+.khan__buy-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #2f80ed;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 550ms;
+}
+
+.khan__buy-link:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
